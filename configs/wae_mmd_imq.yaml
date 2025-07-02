@@ -6,10 +6,11 @@ model_params:
   kernel_type: 'imq'
 
 data_params:
-  data_path: "Data/"
+  data_path: "/data/private/rp218/Data/"
   train_batch_size: 64
   val_batch_size:  64
   patch_size: 64
+  # patch_size: 128
   num_workers: 4
 
 
@@ -21,7 +22,6 @@ exp_params:
   manual_seed: 1265
 
 trainer_params:
-  gpus: [1]
   max_epochs: 10
 
 logging_params:
